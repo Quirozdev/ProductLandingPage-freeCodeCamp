@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+  
+  #header-img {
+    width: 25%;
+    max-width: 100px;
+  }
+  
+  #nav-bar {
+    width: 50%;
+  }
+  
+  #nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: black;
+  }
+  
+  main {
+    margin-top: 130px;
+  }
+  
+  #get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+  }
+  
+  #submit {
+    padding: 5px 2px 5px 14px;
+    font-weight: bold;
+    font-size: 1.05rem;
+    border: none;
+    background-color: #ab1;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: orange;
+  }
+  
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+  }
+  
+  .feature-container {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    width: 85%;
+    max-width: 600px;
+  }
+  
+  .feature-container i {
+    color: orange;
+    width: 15%;
+    font-size: 2.4rem;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+  
+  .feature-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .feature-description {
+    font-size: 1.05rem;
+  }
+  
+  #how-it-works {
+    margin: 30px 0;
+  }
+  
+  #video {
+    display: block;
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 15px;
+  }
+  
+  .price-card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .bike-name {
+    background-color: #eee;
+    padding: 5px;
+  }
+  
+  .price::before {
+    content: "$";
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .select-bike-button {
+    border: none;
+    background-color: yellow;
+    padding: 10px 20px;
+    margin: 10px auto;
+  }
+  
+  .select-bike-button:hover {
+    background-color: orange;
+    cursor: pointer;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #eee;
+    padding: 20px;
+  }
+  
+  footer ul {
+    display: flex;
+  }
+  
+  footer ul li {
+    margin: 0 6px;
+  }
+  
+  
+  
+  
+  @media (max-width: 560px) {
+    #header {
+      flex-direction: column;
+    }
+  
+    #nav-bar ul {
+      flex-direction: column;
+    }
+  
+    main {
+      margin-top: 220px;
+    }
+  
+    #pricing {
+      flex-direction: column;
+    }
+  }
